@@ -410,6 +410,10 @@ h1{
         document.body.classList.remove("blurred");  // Remove blur effect from background
     }
 
+        // Create a description element (HTML allowed)  
+    const desc = document.createElement('div');  
+    desc.innerHTML = description;  // Use innerHTML to allow HTML elements
+
     // Search functionality
     function search() {
         const query = document.getElementById('searchInput').value;
